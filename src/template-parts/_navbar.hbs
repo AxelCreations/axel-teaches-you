@@ -1,0 +1,39 @@
+<nav id="site-nav" class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="assets/img/aty-logo.png" alt="AxelTeachesYou-Logo" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNavbar" aria-labelledby="mainNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mainNavbarLabel">Navegar</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Axel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Pregúntame</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="learnDropDown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprender
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learnDropDown">
+                            <li><a class="dropdown-item" href="excel-index.html">Excel</a></li>
+                            <li><a class="dropdown-item" href="/">C#</a></li>
+                            <li><a class="dropdown-item" href="/">PowerShell</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
