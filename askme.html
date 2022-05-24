@@ -25,7 +25,7 @@
 
     <nav id="site-nav" class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="assets/img/aty-logo.png" alt="AxelTeachesYou-Logo" height="100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar"
@@ -41,10 +41,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Axel</a>
+                            <a class="nav-link active" aria-current="page" href="/">Axel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pregúntame</a>
+                            <a class="nav-link" href="askme.html">Pregúntame</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="learnDropDown" role="button"
@@ -52,9 +52,9 @@
                                 Aprender
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="learnDropDown">
-                                <li><a class="dropdown-item" href="#">Excel</a></li>
-                                <li><a class="dropdown-item" href="#">C#</a></li>
-                                <li><a class="dropdown-item" href="#">PowerShell</a></li>
+                                <li><a class="dropdown-item" href="excel-index.html">Excel</a></li>
+                                <li><a class="dropdown-item" href="/">C#</a></li>
+                                <li><a class="dropdown-item" href="/">PowerShell</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -96,6 +96,35 @@
     </div>
 </section>
 
+<article class="article" id="form-ask-article">
+    <h1 class="text-center mb-3">¿Cuál es tu Pregunta?</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-6 pt-4">
+                <form action="/askme.html#form-ask-article" method="get" id="form-ask">
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control" placeholder="email@domain.com" />
+                    </div>
+                    <div class="form-group mb-4">
+                        <select name="area" id="area" class="form-select">
+                            <option value="">Tema</option>
+                            <option value="cs">C#</option>
+                            <option value="xls">Excel</option>
+                            <option value="ps">PowerShell</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <textarea placeholder="Desarrolla tu pregunta" class="form-control" name="question" id="question" cols="30" rows="6"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn w-100 btn-outline-light">Enviar Pregunta</button>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</article>
+
 <article>
     <h1 class="text-center mb-5">¿Qué Aprender?</h1>
     <div class="container">
@@ -117,8 +146,8 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-outline-light">Lectura en Blog</button>
-                        <button class="btn btn-outline-danger">Video en YouTube</button>
+                        <a href="excel-index.html" class="btn btn-outline-light">Lectura en Blog</a>
+                        <a href="#" class="btn btn-outline-danger">Video en YouTube</a>
                     </div>
                 </div>
             </div>
@@ -138,8 +167,8 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-outline-light">Lectura en Blog</button>
-                        <button class="btn btn-outline-danger">Video en YouTube</button>
+                        <a href="powershell-index.html" class="btn btn-outline-light">Lectura en Blog</a>
+                        <a href="#" class="btn btn-outline-danger">Video en YouTube</a>
                     </div>
                 </div>
             </div>
@@ -160,8 +189,8 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-outline-light">Lectura en Blog</button>
-                        <button class="btn btn-outline-danger">Video en YouTube</button>
+                        <a href="csharp-index.html" class="btn btn-outline-light">Lectura en Blog</a>
+                        <a href="#" class="btn btn-outline-danger">Video en YouTube</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +205,7 @@
         <div class="row justify-content-center post-container excel">
             <div class="col-12 col-lg-8 col-xxl-6">
                 <div class="post">
-                    <a href="#" class="post-image">
+                    <a href="excel-post.html" class="post-image">
                         <img src="assets/img/post.jpg" alt="PostImage" height="900">
                     </a>
                     <div class="post-detail">
@@ -192,14 +221,14 @@
                         </div>
                     </div>
                     <div class="post-meta">
-                        <a href="#" class="post-meta-author">Read More...</a>
+                        <a href="excel-post.html" class="post-meta-read">Read More...</a>
                         <a href="#" class="post-meta-author">@AxelCreations</a>
                     </div>
                 </div>
             </div><!-- col -->
             <div class="col-12 col-lg-8 col-xxl-6">
                 <div class="post">
-                    <a href="#" class="post-image">
+                    <a href="excel-post.html" class="post-image">
                         <img src="assets/img/post.jpg" alt="PostImage" height="300">
                     </a>
                     <div class="post-detail">
@@ -215,7 +244,7 @@
                         </div>
                     </div>
                     <div class="post-meta">
-                        <a href="#" class="post-meta-author">Read More...</a>
+                        <a href="excel-post.html" class="post-meta-read">Read More...</a>
                         <a href="#" class="post-meta-author">@AxelCreations</a>
                     </div>
                 </div>
@@ -225,7 +254,7 @@
         <div class="row justify-content-center post-container powershell">
             <div class="col-12 col-lg-8 col-xxl-6">
                 <div class="post">
-                    <a href="#" class="post-image">
+                    <a href="powershell-post.html" class="post-image">
                         <img src="assets/img/post.jpg" alt="PostImage" height="1300">
                     </a>
                     <div class="post-detail">
@@ -243,14 +272,14 @@
                         </div>
                     </div>
                     <div class="post-meta">
-                        <a href="#" class="post-meta-author">Read More...</a>
+                        <a href="powershell-post.html" class="post-meta-read">Read More...</a>
                         <a href="#" class="post-meta-author">@AxelCreations</a>
                     </div>
                 </div>
             </div><!-- col -->
             <div class="col-12 col-lg-8 col-xxl-6">
                 <div class="post">
-                    <a href="#" class="post-image">
+                    <a href="powershell-post.html" class="post-image">
                         <img src="assets/img/post.jpg" alt="PostImage" height="300">
                     </a>
                     <div class="post-detail">
@@ -267,7 +296,7 @@
                         </div>
                     </div>
                     <div class="post-meta">
-                        <a href="#" class="post-meta-author">Read More...</a>
+                        <a href="powershell-post.html" class="post-meta-read">Read More...</a>
                         <a href="#" class="post-meta-author">@AxelCreations</a>
                     </div>
                 </div>
@@ -277,7 +306,7 @@
         <div class="row justify-content-center post-container csharp">
             <div class="col-12 col-lg-8 col-xxl-6">
                 <div class="post">
-                    <a href="#" class="post-image">
+                    <a href="csharp-post.html" class="post-image">
                         <img src="assets/img/post.jpg" alt="PostImage" height="1300">
                     </a>
                     <div class="post-detail">
@@ -296,7 +325,7 @@
                         </div>
                     </div>
                     <div class="post-meta">
-                        <a href="#" class="post-meta-author">Read More...</a>
+                        <a href="csharp-index.html" class="post-meta-read">Read More...</a>
                         <a href="#" class="post-meta-author">@AxelCreations</a>
                     </div>
                 </div>
