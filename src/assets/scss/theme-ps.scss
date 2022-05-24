@@ -1,0 +1,79 @@
+body.powershell {
+    #body-wave-1 {
+        // left: 0;
+        // transform-origin: 50%;
+        // transform: rotateY(-180deg);
+
+        path {
+            fill: rgba($ps-primary, 0.35);
+        }
+    }
+
+    #section-main {
+        min-height: 400px;
+
+        .container {
+            height: 70%;
+            padding-bottom: 1rem;
+            padding-top: 100px;
+
+            .main-post {
+                &-date {
+                    font-size: 1.3rem !important;
+                    font-weight: 700;
+                }
+
+                &-body {
+                    font-size: 1.25rem !important;
+                    margin-bottom: 0 !important;
+                }
+
+                &-video {
+                    align-items: center;
+                    display: flex;
+                    font-size: 0.95rem;
+
+                    span {
+                        margin-right: 0.5rem;
+                    }
+
+                    i.bi-youtube {
+                        font-size: 2.1rem;
+                    }
+                }
+            }
+        }
+
+        .main-post-meta {
+            background-color: rgba($ps-primary, 0.2);
+            border-radius: 0.75rem;
+            margin: 1rem 0;
+            padding-bottom: 0.75rem;
+            padding-top: 0.75rem;
+        }
+
+        .main-post-title {
+            margin-bottom: 1rem !important;
+        }
+
+        .main-post-img {
+            border-radius: 0 0 0.75rem 0.75rem;
+            display: flex;
+            height: auto;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+
+    #site-nav {
+        height: 110px;
+    }
+
+    @media screen and (max-width: 1110px) {
+        #section-main {
+            .main-post-meta {
+                background-color: transparent;
+            }
+        }
+    }
+}
