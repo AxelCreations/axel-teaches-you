@@ -1,67 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+{{> _header bodyClass="" }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AxelTeachesYou</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-    </style>
-
-    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-</head>
-
-<body class="">
-
-    <svg id="body-wave-1" width="804" height="771" viewBox="0 0 804 771" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 0.5C59.6667 86.6667 82 269 466.5 386C851 503 787.333 684.667 803 770.5V0.5H1Z" fill="#065784" />
-    </svg>
-
-
-
-    <nav id="site-nav" class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="assets/img/aty-logo.png" alt="AxelTeachesYou-Logo" height="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNavbar" aria-labelledby="mainNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="mainNavbarLabel">Navegar</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="axel.html">Axel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="askme.html">Pregúntame</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="learnDropDown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Aprender
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="learnDropDown">
-                                <li><a class="dropdown-item" href="excel-index.html">Excel</a></li>
-                                <li><a class="dropdown-item" href="csharp-index.html">C#</a></li>
-                                <li><a class="dropdown-item" href="powershell-index.html">PowerShell</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
 <section id="section-main" class="main-background">
     <div class="container">
         <div class="row h-100 align-items-center">
@@ -95,6 +33,70 @@
         </div>
     </div>
 </section>
+
+<article class="article">
+    <h1 class="text-center mb-5">Tecnologías que Manejo</h1>
+
+    <div class="container technology-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-5">
+                <h5>Desarrollo de Software</h5>
+                <div class="technology">
+                    <div class="technology-image">
+                        <img src="assets/img/cs.png" alt="technology" height="100">
+                    </div>
+                    <div class="technology-skill">
+                        4/5
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 mb-5">
+                <h5>Frameworks y Librerías</h5>
+                <div class="technology">
+                    <div class="technology-image">
+                        <img src="assets/img/xls.png" alt="technology" height="100">
+                    </div>
+                    <div class="technology-skill">
+                        4/5
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 mb-5">
+                <h5>Automatización de Oficina</h5>
+                <div class="technology">
+                    <div class="technology-image">
+                        <img src="assets/img/ps.png" alt="technology" height="100">
+                    </div>
+                    <div class="technology-skill">
+                        4/5
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 mb-5">
+                <h5>Scripting</h5>
+                <div class="technology">
+                    <div class="technology-image">
+                        <img src="assets/img/xls.png" alt="technology" height="100">
+                    </div>
+                    <div class="technology-skill">
+                        4/5
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 mb-5">
+                <h5>Infraestructura</h5>
+                <div class="technology">
+                    <div class="technology-image">
+                        <img src="assets/img/cs.png" alt="technology" height="100">
+                    </div>
+                    <div class="technology-skill">
+                        4/5
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
 
 <article>
     <h1 class="text-center mb-5">¿Qué Aprender?</h1>
@@ -305,20 +307,4 @@
     </div>
 </article>
 
-<footer>
-    <div class="container">
-        <img src="assets/img/aty-logo.png" alt="AxelTeachesYou-Logo" height="200">
-        <div class="main-contact d-flex justify-content-around px-lg-5 mt-3">
-            <a href="#"><i class="bi-linkedin"></i></a>
-            <a href="#"><i class="bi-github"></i></a>
-            <a href="#"><i class="bi-youtube"></i></a>
-            <a href="#"><i class="bi-twitter"></i></a>
-        </div>
-    </div>
-</footer>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/app.js"></script>
-</body>
-
-</html>
+{{> _footer }}
