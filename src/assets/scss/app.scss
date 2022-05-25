@@ -8,6 +8,22 @@ body {
     font-family: $font-family;
     font-size: $font-size-body;
     overflow-x: hidden;
+
+    &.post {
+        #section-main {
+            min-height: 400px;
+
+            .container {
+                height: 50%;
+                height: 70%;
+                padding-bottom: 1rem;
+                padding-top: 100px;
+            }
+        }
+        #site-nav {
+            height: 110px;
+        }
+    }
 }
 
 footer {
@@ -105,7 +121,7 @@ footer {
     z-index: -1;
 
     path {
-        fill: rgba($color-white-smoke, 0.25);
+        fill: rgba($color-white-smoke, 0.5);
     }
 }
 
@@ -148,6 +164,10 @@ button {
             &:hover,
             &:focus {
                 color: $color-white-smoke;
+            }
+
+            &.active {
+                border-bottom: 2px solid $color-white;
             }
         }
     }

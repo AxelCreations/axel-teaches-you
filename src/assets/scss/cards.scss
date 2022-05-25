@@ -22,6 +22,9 @@
         padding: 0.75rem 0.5rem;
 
         button, a {
+            align-items: center;
+            display: flex;
+            justify-content: center;
             width: 100%;
 
             &:first-child {
