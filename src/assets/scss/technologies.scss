@@ -1,0 +1,113 @@
+.technology-container {
+    .d-flex {
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+
+        h4 {
+            display: block;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        .technology {
+            align-items: center;
+            background-color: $color-black-90;
+            border-radius: 50%;
+            box-shadow: 0px 0px 8px 4px rgba(black, 0.2);
+            display: flex;
+            height: 140px;
+            justify-content: center;
+            position: relative;
+            width: 140px;
+
+            &:hover {
+                &::after {
+                    animation: techname 0.5s ease-in;
+                    bottom: 5%;
+                    height: 90%;
+                    opacity: 1;
+                }
+            }
+
+            &::after {
+                content: 'SQL Management Studio';
+                align-items: center;
+                background-color: $color-black-90;
+                display: flex;
+                font-size: 0.9rem;
+                height: 20%;
+                justify-content: center;
+                overflow: hidden;
+                padding-bottom: 0.25rem;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                bottom: -50%;
+                border-radius: 50%;
+                opacity: 0;
+                border: 5px solid $color-black-90;
+                z-index: 0;
+            }
+
+            @keyframes techname {
+                0% {
+                    height: 90%;
+                    bottom: -20%;
+                    opacity: 0;
+                }
+
+                50% {
+                    height: 90%;
+                    bottom: -5%;
+                    opacity: 0.7;
+                }
+
+                80% {
+                    height: 90%;
+                    bottom: 2%;
+                    opacity: 0.9;
+                }
+
+                100% {
+                    bottom: 4%;
+                    opacity: 1;
+                    height: 90%
+                }
+            }
+
+            &-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 115px;
+                width: 115px;
+                border-radius: 50%;
+                border: 1px solid $color-black;
+                overflow: hidden;
+                box-shadow: inset 1px 1px 10px 8px rgba(black, 0.75);
+                position: relative;
+
+                img {
+                    box-shadow: inset 1px 1px 10px 8px rgba(black, 0.25);
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    z-index: 0;
+                }
+            }
+
+            &-skill {
+                background-color: $color-black-90;
+                padding: 0.25rem 1.75rem;
+                display: block;
+                position: absolute;
+                border-radius: 0.25rem;
+                bottom: 0;
+                z-index: 999;
+                box-shadow: 1px 1px 5px 3px rgba(black, 0.15);
+            }
+        }
+    }
+}
